@@ -1,0 +1,11 @@
+function mostrarInformacionJugador(source)
+    x,y,z = getElementPosition(source)
+    rx,ry,rz = getElementRotation(source)
+    dim = getElementDimension(source)
+    int = getElementInterior(source)
+    outputChatBox("Posicion:"..x..", "..y..", "..z, source, 255, 58, 0, true)
+    outputChatBox("Rotacion:"..x..", "..y..", "..z, source, 255, 58, 0, true)
+    outputChatBox("Dimension:"..dim, source, 255, 58, 0, true)
+    outputChatBox("Interior:"..int, source, 255, 58, 0, true)
+end
+addCommandHandler("imprimir", mostrarInformacionJugador)
